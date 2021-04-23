@@ -22,7 +22,7 @@ h2 {
   color: #AAA;
   font-family: 'Yantramanav', sans-serif;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 500;
   letter-spacing: 2px;
   margin: 0;
   text-align: center;
@@ -33,7 +33,7 @@ p {
   color: #333;
   font-family: 'Yantramanav', sans-serif;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
   margin: 0;
   text-align: center;
 }
@@ -58,7 +58,13 @@ p {
   text-transform: uppercase;
 }
 
-#gameboard {
+a:hover {
+  background-color: #004E89;
+  border-color: #004E89;
+  color: #C0C0C0;
+}
+
+#listboard {
   position: relative;
   text-align: center;
   top: 30px;
@@ -76,9 +82,8 @@ p {
 }
 
 .card:hover {
-  background-color: #004E89;
+  background-color: #F5F5F5;
   border-color: #004E89;
-  color: #C0C0C0;
 }
 
 .card ul {
