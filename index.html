@@ -13,7 +13,13 @@
 
   <div class="actions">
     <a href="#">Change Location</a>
-    <a href="#">Change Category</a>
+    <select id="catss" name="catss">
+      <option value="top">--Change Category--</option>
+      <option value="food">Food Home-Delivery Service</option>
+      <option value="meds">Medical Supplier</option>
+      <option value="groc">Groceries/Food Items</option>
+      <option value="audi">Hospital/Ambulance</option>
+    </select>
     <!-- Trigger/Open The Modal -->
     <button id="myBtn">Add A Local Service</button>
     <!-- The Modal -->
@@ -29,7 +35,12 @@
             <label for="fname">NAME:</label>
             <input type="text" id="fname" name="fname" value=""><br><br>
             <label for="cat">CATEGORY:</label>
-            <input type="text" id="cat" name="cat" value=""><br><br>
+            <select id="cats" name="cats">
+              <option value="food">Food Home-Delivery Service</option>
+              <option value="meds">Medical Supplier</option>
+              <option value="groc">Groceries/Food Items</option>
+              <option value="audi">Hospital/Ambulance</option>
+            </select><br><br>
             <label for="loc">LOCATION:</label>
             <input type="text" id="loc" name="loc" value=""><br><br>
             <label for="cat">PHONE:</label>
