@@ -161,8 +161,8 @@ button:hover {
 .modal-header h2{
   color: #333;
   font-family: 'Yantramanav', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: 400;
   margin: 0;
   text-align: center;
 }
@@ -224,5 +224,41 @@ button:hover {
  #sub{
   position: relative;
   left: 80px;
+}
+
+#cats{
+  border: none;
+  border-radius: 3px;
+  color: #004E89;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-block;
+  margin: 10px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+.modal-body button{
+
+  background-color: #F0F0F0;
+}
+
+#sub{
+  border-radius: 3px;
+  color: #004E89;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-block;
+  margin: 10px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
 }
     
