@@ -261,4 +261,11 @@ button:hover {
   text-transform: uppercase;
 
 }
-    
+
+
+.coordinates{
+  text-align: right;
+  position: relative;
+  right: 300px;
+
+}
