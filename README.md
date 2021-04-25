@@ -1,2 +1,2 @@
-# KnowYourLoKol.com
+# KnowYourLoCal
 Connect With Your Local Services
