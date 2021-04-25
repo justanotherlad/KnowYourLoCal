@@ -55,7 +55,7 @@
   <div id="listboard">
     <div class="card">
       <ul>
-        <li>NAME:</li><br>
+        <li>NAME: <span id="myText"></span></li><br>
         <li>CATEGORY:</li><br>
         <li>LOCATION:</li><br>
         <li>PHONE:</li>
@@ -252,16 +252,16 @@ var x = document.getElementById("demo");
 
 function getLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
+    navigator.geolocation.getCurrentPosition(storePosition);
   }
 }
 
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
+function storePosition(position) {
+  var lat=position.coords.latitude;
+  var longi=position.coords.longitude;
+  document.getElementById("myText").innerHTML=lat;
 }
+
 
 
 
