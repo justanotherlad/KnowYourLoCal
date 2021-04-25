@@ -31,7 +31,7 @@
           <h2>Add A Local Service</h2>
         </div>
         <div class="modal-body">
-          <form action="/action_page.php">
+          <form action="none">
             <label for="fname">NAME:</label>
             <input type="text" id="fname" name="fname" value=""><br><br>
             <label for="cat">CATEGORY:</label>
@@ -42,7 +42,11 @@
               <option value="audi">Hospital/Ambulance</option>
             </select><br><br>
             <label for="loc">LOCATION:</label>
-            <button onclick="getLocation()">Use Current Location</button><br><br>
+            <button onclick="getLocation1()">Use Current Location</button><br>
+            <div class="coordinates">
+              <p>Latitude: <span id="myLat"></span></p>
+              <p>Longitude: <span id="myLong"></span></p><br>
+            </div>
             <label for="cat">PHONE:</label>
             <input type="text" id="phone" name="phone" value=""><br><br><br><br>
             <input id="sub" type="submit" value="Submit">
@@ -55,7 +59,7 @@
   <div id="listboard">
     <div class="card">
       <ul>
-        <li>NAME: <span id="myText"></span></li><br>
+        <li>NAME:</li><br>
         <li>CATEGORY:</li><br>
         <li>LOCATION:</li><br>
         <li>PHONE:</li>
@@ -248,7 +252,17 @@ window.onclick = function(event) {
 
 
 
-var x = document.getElementById("demo");
+
+
+
+var catss = document.getElementById("catss");
+var cats = document.getElementById("cats");
+
+var lat=0;
+var lat1=0;
+var longi=0;
+var longi1=0;
+
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -256,10 +270,23 @@ function getLocation() {
   }
 }
 
+function getLocation1() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(storePosition1);
+  }
+}
+
 function storePosition(position) {
-  var lat=position.coords.latitude;
-  var longi=position.coords.longitude;
-  document.getElementById("myText").innerHTML=lat;
+  lat=position.coords.latitude;
+  longi=position.coords.longitude;
+  
+}
+
+function storePosition1(position) {
+  lat1=position.coords.latitude;
+  longi1=position.coords.longitude;
+  document.getElementById("myLat").innerHTML=lat1;
+  document.getElementById("myLong").innerHTML=longi1;
 }
 
 
