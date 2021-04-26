@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["knowyourlocal.herokuapp.com"]
 # Application definition
 
 INSTALLED_APPS = [
+    "corsheaders",
     "phonenumber_field",
     "rest_framework",
     "api",
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -133,3 +135,5 @@ DATABASES["default"] = dj_database_url.config(conn_max_age=600, ssl_require=True
 
 PHONENUMBER_DB_FORMAT = "E164"
 PHONENUMBER_DEFAULT_REGION = "IN"
+
+ORS_ALLOW_ALL_ORIGINS = True
