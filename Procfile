@@ -1,1 +1,1 @@
-web: cd backend && gunicorn knowyourlocal.wsgi.py
+web: cd backend && gunicorn knowyourlocal.wsgi
