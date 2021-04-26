@@ -136,4 +136,4 @@ DATABASES["default"] = dj_database_url.config(conn_max_age=600, ssl_require=True
 PHONENUMBER_DB_FORMAT = "E164"
 PHONENUMBER_DEFAULT_REGION = "IN"
 
-ORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
